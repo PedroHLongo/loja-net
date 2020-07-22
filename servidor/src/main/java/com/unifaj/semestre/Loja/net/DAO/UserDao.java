@@ -4,6 +4,8 @@ import com.unifaj.semestre.Loja.net.Entity.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -44,6 +46,32 @@ public class UserDao {
         }catch (Exception ex){
             ex.printStackTrace();
         }
+        return u;
+    }
+
+    public User userSignUp(User u){
+        Connection con = null;
+        PreparedStatement ps = null;
+        try{
+            con = jdbcTemplate.getDataSource().getConnection();
+            ps = con.prepareStatement("INSERT INTO USER"
+            + "(first_name, last_name, email, cpf, password)"
+            + "VALUES"
+            + "(?, ?, ?, ?, ?)");
+            ps.setString(1, u.getFirstName());
+            ps.setString(2, u.getLastName());
+            ps.setString(3, u.getEmail());
+            ps.setString(4, u.getCpf());
+            ps.setString(5, u.getPassword());
+
+            ps.executeUpdate();
+
+            ps.close();
+            con.close();
+        } catch (Exception e){
+            e.printStackTrace();
+        }
+        System.out.println("User Signed up successfully.");
         return u;
     }
 

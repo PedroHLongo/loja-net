@@ -32,4 +32,13 @@ public class UserController {
         }
         return new JSONObject(u).toString();
     }
+
+    //----------------------------------------------------------------------//
+    //-------------------------- USER SIGN UP ------------------------------//
+    //----------------------------------------------------------------------//
+
+    @PostMapping("userSignUp")
+    public User userSignUp(@RequestBody User u){
+        return userDao.userSignUp(u);
+    }
 }

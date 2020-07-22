@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Loja.net</string>
+    <string name="button_signIn">Sign In</string>
+    <string name="button_signUp">Sign up</string>
+    <string name="hint_login">Login</string>
+    <string name="hint_password">Password</string>
+
 </resources>

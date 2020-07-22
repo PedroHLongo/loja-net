@@ -6,8 +6,10 @@ import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Spinner;
 import android.widget.Toast;
 
 import com.android.volley.AuthFailureError;
@@ -25,6 +27,8 @@ import org.json.JSONObject;
 import org.json.JSONTokener;
 
 import java.io.UnsupportedEncodingException;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 public class LoginActivity extends AppCompatActivity {
@@ -51,7 +55,6 @@ public class LoginActivity extends AppCompatActivity {
                 isFieldEmpty();
             }
         });
-
     }
 
     public void isFieldEmpty(){
@@ -100,7 +103,6 @@ public class LoginActivity extends AppCompatActivity {
                                 Snackbar mySnackbar = Snackbar.make(findViewById(R.id.mainActivity),
                                         "Incorrect username or password!", Snackbar.LENGTH_LONG);
                                 mySnackbar.show();
-
                             }
                         }
                         catch (JSONException e) {
