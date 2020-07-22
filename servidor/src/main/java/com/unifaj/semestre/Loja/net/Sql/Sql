@@ -1,0 +1,6 @@
+create table user(id number not null auto_increment,
+                  first_name varchar2(20) not null,
+                  last_name varchar2(20) not null,
+                  email varchar2(70) not null,
+                  cpf varchar2(11) not null,
+                  password varchar2(30) not null);
