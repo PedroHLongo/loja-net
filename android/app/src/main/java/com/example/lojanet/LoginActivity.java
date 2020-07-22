@@ -3,6 +3,7 @@ package com.example.lojanet;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -84,21 +85,22 @@ public class LoginActivity extends AppCompatActivity {
                             JSONObject jobj = (JSONObject) jsonTokener.nextValue();
                             if(!jobj.has("Error")){
                                 User u = new User();
-                                u.setFirstName(jobj.getString("first_name"));
-                                u.setLastName(jobj.getString("last_name"));
-                                u.setPassword(jobj.getString("password"));
-                                u.setCpf(jobj.getString("cpf"));
                                 u.setId(jobj.getLong("id"));
+                                u.setFirstName(jobj.getString("firstName"));
+                                u.setLastName(jobj.getString("lastName"));
                                 u.setEmail(jobj.getString("email"));
-
-
+                                u.setCpf(jobj.getString("cpf"));
+                                u.setPassword(jobj.getString("password"));
                                 saveUserData();
                             }else{
+                                loginMain.setText("");
+                                passwordMain.setText("");
+                                loginMain.setBackgroundResource(R.drawable.edittext_bg);
+                                loginMain.setBackgroundColor(1);
                                 Snackbar mySnackbar = Snackbar.make(findViewById(R.id.mainActivity),
                                         "Incorrect username or password!", Snackbar.LENGTH_LONG);
                                 mySnackbar.show();
-                                loginMain.setText("");
-                                passwordMain.setText("");
+
                             }
                         }
                         catch (JSONException e) {
@@ -132,7 +134,7 @@ public class LoginActivity extends AppCompatActivity {
         }
 
     public String ipPC(){
-        String ip = "http://192.168.0.114:8082/";
+        String ip = "http://192.168.1.105:8082/";
         return ip;
     }
 

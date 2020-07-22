@@ -4,3 +4,6 @@ create table user(id number not null auto_increment,
                   email varchar2(70) not null,
                   cpf varchar2(11) not null,
                   password varchar2(30) not null);
+
+
+insert into user(first_name, last_name, email, cpf, password) VALUES ('', '', '', '', '')

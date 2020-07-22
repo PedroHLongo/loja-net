@@ -1,0 +1,6 @@
+2020-07-22 16:54:22 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "USER" not found; SQL statement:
+select * from user where(cpf = ? OR email = ?) AND password = ? [42102-200]
+2020-07-22 16:55:11 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "SELECT * USER[*]"; SQL statement:
+select * user [42000-200]
