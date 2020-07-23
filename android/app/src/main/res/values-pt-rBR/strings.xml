@@ -5,5 +5,8 @@
     <string name="button_signUp">Cadastrar</string>
     <string name="hint_login">Usuario</string>
     <string name="hint_password">Senha</string>
-    <string name="dapisouhduhsadsa">d</string>
+    <string name="first_name">Nome</string>
+    <string name="last_name">Sobrenome</string>
+    <string name="password">Senha</string>
+    <string name="confirm_password">Confirmar senha</string>
 </resources>
