@@ -1,0 +1,97 @@
+TORÓ DE PARPITI
+
+APP de gerenciamento de estoque e venda de produtos de informática
+
+Parte de gerenciamento
+	adicionar, remover e alterar produtos(nome, preço...)
+	
+Parte de navegação
+	perfil
+		-dados da pessoa
+	meus pedidos
+		-produtos
+			-especificações do produto
+			-random com código de rastreio do correios
+	lista de produtos
+		-produtos irão aparecer os melhores avaliados em primeiro
+		-foto
+		-nome
+		-breve descrição
+		-estrelas(avaliações)
+		-preço
+	produto
+		-nome
+		-foto do produto
+		-avaliação do produto
+		-descrição
+		-preço
+		-pergunta e resposta
+		-comentário e avaliação(somente 1 por pessoa)
+	carrinho
+		-compra a ser confirmada
+	lista de desejos
+
+	Modo Escuro
+
+	Poder navegar no app sem estar logado, porém o uso de algumas ferramentas(Lisa de desejos, compras, ...) necessitara o login
+
+Banco
+	Usuario
+		-Id
+		-Nome
+		-Email
+		-Senha
+		-Data Nascimento
+		-CPF
+		-Telefone
+
+	Endereço
+		-Código
+		-Id Pessoa
+		-Rua
+		-Numero
+		-Bairro
+		-CEP
+		-Referencia
+
+	Categoria
+		-Id
+		-Nome
+
+	Produto
+		-Código Produto
+		-Nome
+		-Preço
+		-Id Categoria
+		-Descrição
+		-Informações Técnicas
+
+	Avaliações
+		-Id Usuario
+		-Id Produto
+		-Titulo
+		-Comentário
+		-Nota
+
+	Entrega
+		-Id
+		-Nome
+		-Tipo
+		-Preço
+	
+	Compra
+		-Código
+		-Código Produto
+		-Id Entrega
+		-Id Usuario
+		-Data Compra
+		-Data Confirmação Pagamento
+		-Quantidade
+		-Preço Total
+		-Código Endereço
+		
+		
+		
+		
+		
+	
