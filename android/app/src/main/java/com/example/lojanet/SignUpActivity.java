@@ -19,22 +19,22 @@ import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 import com.example.lojanet.Entities.CpfValidator;
 import com.google.android.material.snackbar.Snackbar;
+import com.google.android.material.textfield.TextInputEditText;
 
 import org.json.JSONException;
 import org.json.JSONObject;
 import org.json.JSONTokener;
 
 import java.io.UnsupportedEncodingException;
-import java.util.Scanner;
 
 public class SignUpActivity extends AppCompatActivity {
 
-    EditText signUpETFirstName;
-    EditText signUpETLastName;
-    EditText signUpETEmail;
-    EditText signUPETCPF;
-    EditText signUpETPassword;
-    EditText signUpETConfirmPassword;
+    TextInputEditText signUpETFirstName;
+    TextInputEditText signUpETLastName;
+    TextInputEditText signUpETEmail;
+    TextInputEditText signUPETCPF;
+    TextInputEditText signUpETPassword;
+    TextInputEditText signUpETConfirmPassword;
     Button signUpButton;
     LoginActivity lA = new LoginActivity();
 
@@ -43,11 +43,11 @@ public class SignUpActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_up);
 
-        signUpETFirstName = findViewById(R.id.signUpEditTextTextFirstName);
-        signUpETLastName = findViewById(R.id.signUpEditTextTextLastName);
-        signUpETEmail = findViewById(R.id.signUpEditTextTextEmail);
-        signUPETCPF = findViewById(R.id.signUpEditTextTextCpf);
-        signUpETPassword = findViewById(R.id.signUpEditTextTextPassword);
+        signUpETFirstName = findViewById(R.id.signUpTextInputEditTextFirstName);
+        signUpETLastName = findViewById(R.id.signUpTextInputEditTextLastName);
+        signUpETEmail = findViewById(R.id.signUpTextInputEditTextEmail);
+        signUPETCPF = findViewById(R.id.signUpTextInputEditTextCpf);
+        signUpETPassword = findViewById(R.id.signUpTextInputEditTextPassword);
         signUpETConfirmPassword = findViewById(R.id.signUpEditTextTextConfirmPassword);
         signUpButton = findViewById(R.id.signUpbuttonSignUp);
 

@@ -21,6 +21,8 @@ import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 import com.example.lojanet.Entities.User;
 import com.google.android.material.snackbar.Snackbar;
+import com.google.android.material.textfield.TextInputEditText;
+import com.google.android.material.textfield.TextInputLayout;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -33,8 +35,8 @@ import java.util.Scanner;
 
 public class LoginActivity extends AppCompatActivity {
 
-    EditText loginMain;
-    EditText passwordMain;
+    TextInputEditText loginMain;
+    TextInputEditText passwordMain;
     Button signIn;
     Button signUp;
 
@@ -44,10 +46,11 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        loginMain = findViewById(R.id.editTextTextLogin);
-        passwordMain = findViewById(R.id.editTextPassword);
+        loginMain = findViewById(R.id.TextInputEditTextLogin);
+        passwordMain = findViewById(R.id.TextInputEditTextPassword);
         signIn = findViewById(R.id.buttonSignIn);
         signUp = findViewById(R.id.buttonSignUp);
+
 
         signIn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -55,6 +58,7 @@ public class LoginActivity extends AppCompatActivity {
                 isFieldEmpty();
             }
         });
+
 
         signUp.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -65,11 +69,19 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     public void isFieldEmpty(){
-        if(loginMain.getText().toString().equals("") || passwordMain.getText().toString().equals("")){
-            Snackbar loginSnackBar = Snackbar.make(findViewById(R.id.mainActivity),
+        if(loginMain.getText().toString().equals("") /*|| passwordMain.getText().toString().equals("")*/){
+           /* Snackbar loginSnackBar = Snackbar.make(findViewById(R.id.mainActivity),
                     R.string.fill_in_the_empty_fields, Snackbar.LENGTH_SHORT);
-            loginSnackBar.show();
-        }else{
+            loginSnackBar.show();*/
+           loginMain.setError("Enter Name");
+
+        }if(passwordMain.getText().toString().equals("")){
+
+            passwordMain.setError("Enter Password");
+
+        }
+
+        if(!loginMain.getText().toString().equals("") && !passwordMain.getText().toString().equals("")){
             requestLoginData();
         }
     }
