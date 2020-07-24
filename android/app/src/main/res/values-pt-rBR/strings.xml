@@ -9,4 +9,12 @@
     <string name="last_name">Sobrenome</string>
     <string name="password">Senha</string>
     <string name="confirm_password">Confirmar senha</string>
+    <string name="fill_in_the_empty_fields">Preencha os campos vazio.</string>
+    <string name="invalid_cpf">CPF invalido.</string>
+    <string name="password_5_lengh">Senha deve conter ao menos 5 caracteres.</string>
+    <string name="password_1_special_character">Senha deve conter ao menos 1 caractere especial: @!#</string>
+    <string name="passwords_dont_match">Senhas não são iguais.</string>
+    <string name="user_already_registered">Email ou CPF já registrado.</string>
+    <string name="registered_successfully">Registrado com sucesso!</string>
+    <string name="incorrect_user">Usuario ou senha incorreto.</string>
 </resources>

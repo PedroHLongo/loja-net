@@ -4,12 +4,11 @@ import com.unifaj.semestre.Loja.net.Entity.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.sql.Statement;
 
 @Repository
 public class UserDao {
@@ -49,6 +48,10 @@ public class UserDao {
         return u;
     }
 
+    //----------------------------------------------------------------------//
+    //--------------------------- USER SIGN UP -----------------------------//
+    //----------------------------------------------------------------------//
+
     public User userSignUp(User u){
         Connection con = null;
         PreparedStatement ps = null;
@@ -63,7 +66,6 @@ public class UserDao {
             ps.setString(3, u.getEmail());
             ps.setString(4, u.getCpf());
             ps.setString(5, u.getPassword());
-
             ps.executeUpdate();
 
             ps.close();
@@ -75,4 +77,28 @@ public class UserDao {
         return u;
     }
 
+    //----------------------------------------------------------------------//
+    //------------------ CHECK IF THE USER ALREADY EXIST -------------------//
+    //----------------------------------------------------------------------//
+
+    public User userAlreadyExist(String cpf, String email){
+        String query = "select * from user where(cpf = " + "'" + cpf + "' OR email = " + "'" + email + "')";
+        User u = new User();
+        try(Connection con = jdbcTemplate.getDataSource().getConnection()){
+            Statement stmt = con.createStatement();ResultSet rs = stmt.executeQuery(query);
+            if(rs.next()){
+                String emailDB = rs.getString("email");
+                String cpfDB = rs.getString("cpf");
+                u.setEmail(emailDB);
+                u.setCpf(cpfDB);
+            }else{
+                return null;
+            }
+            rs.close();
+            stmt.close();
+        }catch (Exception ex){
+            ex.printStackTrace();
+        }
+        return u;
+    }
 }

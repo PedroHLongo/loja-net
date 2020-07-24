@@ -67,7 +67,7 @@ public class LoginActivity extends AppCompatActivity {
     public void isFieldEmpty(){
         if(loginMain.getText().toString().equals("") || passwordMain.getText().toString().equals("")){
             Snackbar loginSnackBar = Snackbar.make(findViewById(R.id.mainActivity),
-                    "Fill in the empty fields.", Snackbar.LENGTH_SHORT);
+                    R.string.fill_in_the_empty_fields, Snackbar.LENGTH_SHORT);
             loginSnackBar.show();
         }else{
             requestLoginData();
@@ -108,7 +108,7 @@ public class LoginActivity extends AppCompatActivity {
                                 loginMain.setBackgroundResource(R.drawable.edittext_bg);
                                 loginMain.setBackgroundColor(1);
                                 Snackbar mySnackbar = Snackbar.make(findViewById(R.id.mainActivity),
-                                        "Incorrect username or password!", Snackbar.LENGTH_LONG);
+                                        R.string.incorrect_user, Snackbar.LENGTH_LONG);
                                 mySnackbar.show();
                             }
                         }
@@ -143,7 +143,7 @@ public class LoginActivity extends AppCompatActivity {
         }
 
     public String ipPC(){
-        String ip = "http://192.168.1.105:8082/";
+        String ip = "http://192.168.0.114:8082/";
         return ip;
     }
 

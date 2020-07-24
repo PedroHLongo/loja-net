@@ -8,6 +8,13 @@
     <string name="last_name">Last Name</string>
     <string name="password">Password</string>
     <string name="confirm_password">Confirm Password</string>
-    <string name="dapisouhduhsadsa">pp</string>
+    <string name="incorrect_user"> Incorrect username or password.</string>
+    <string name="fill_in_the_empty_fields">Fill in the empty fields.</string>
+    <string name="invalid_cpf">Invalid CPF.</string>
+    <string name="password_5_lengh">Password must have at least 5 characters.</string>
+    <string name="password_1_special_character">Password must have at least 1 special character.</string>
+    <string name="passwords_dont_match">Passwords don\'t match.</string>
+    <string name="user_already_registered">Email or cpf already registered.</string>
+    <string name="registered_successfully">Registered successfully!</string>
 
 </resources>

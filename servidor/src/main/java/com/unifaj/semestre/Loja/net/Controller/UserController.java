@@ -41,4 +41,17 @@ public class UserController {
     public User userSignUp(@RequestBody User u){
         return userDao.userSignUp(u);
     }
+
+    @PostMapping("/userAlreadyExist")
+    public String userAlreadyExist(@RequestBody String userData){
+        User u;
+        JSONObject object = (JSONObject) (new JSONTokener(userData).nextValue());
+        String emailDB = object.getString("email");
+        String cpfDB = object.getString("cpf");
+        u = userDao.userAlreadyExist(cpfDB, emailDB);
+        if(u == null){
+            return "{\"Error\": true}";
+        }
+        return new JSONObject(u).toString();
+    }
 }
