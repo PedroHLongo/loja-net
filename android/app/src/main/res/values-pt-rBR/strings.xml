@@ -17,4 +17,7 @@
     <string name="user_already_registered">Email ou CPF já registrado.</string>
     <string name="registered_successfully">Registrado com sucesso!</string>
     <string name="incorrect_user">Usuario ou senha incorreto.</string>
+    <string name="title_home">Início</string>
+    <string name="title_products">Produtos</string>
+    <string name="title_wishlist">Lista de Desejos</string>
 </resources>

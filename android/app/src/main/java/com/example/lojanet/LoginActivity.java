@@ -58,8 +58,7 @@ public class LoginActivity extends AppCompatActivity {
                 isFieldEmpty();
             }
         });
-
-
+        
         signUp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -161,7 +160,7 @@ public class LoginActivity extends AppCompatActivity {
 
     public void saveUserData(){
 
-        startActivity(new Intent(this, SecondActivity.class));
+        startActivity(new Intent(this, MainActivity.class));
         finish();
     }
 }
