@@ -38,17 +38,18 @@ public class SignUpActivity extends AppCompatActivity {
     Button signUpButton;
     LoginActivity lA = new LoginActivity();
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_up);
 
-        signUpETFirstName = findViewById(R.id.signUpTextInputEditTextFirstName);
-        signUpETLastName = findViewById(R.id.signUpTextInputEditTextLastName);
-        signUpETEmail = findViewById(R.id.signUpTextInputEditTextEmail);
-        signUPETCPF = findViewById(R.id.signUpTextInputEditTextCpf);
-        signUpETPassword = findViewById(R.id.signUpTextInputEditTextPassword);
-        signUpETConfirmPassword = findViewById(R.id.signUpEditTextTextConfirmPassword);
+        signUpETFirstName = findViewById(R.id.TextInputEditTextFirstName);
+        signUpETLastName = findViewById(R.id.TextInputEditTextLastName);
+        signUpETEmail = findViewById(R.id.TextInputEditTextEmail);
+        signUPETCPF = findViewById(R.id.TextInputEditTextCpf);
+        signUpETPassword = findViewById(R.id.TextInputEditTextPassword);
+        signUpETConfirmPassword = findViewById(R.id.TextInputEditTextConfirmPassword);
         signUpButton = findViewById(R.id.signUpbuttonSignUp);
 
         signUpButton.setOnClickListener(new View.OnClickListener() {

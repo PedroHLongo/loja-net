@@ -12,18 +12,16 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="150dp"
+        android:layout_marginTop="50dp"
         android:orientation="vertical">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
             android:orientation="horizontal">
 
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/signUpTextInputEditTextFirstName"
+                android:id="@+id/TextInputFirstName"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -31,12 +29,13 @@
                 android:hint="First Name">
 
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/TextInputEditTextFirstName"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content" />
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/signUpTextInputEditTextLastName"
+                android:id="@+id/TextInputLastName"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -44,6 +43,7 @@
                 android:hint="LastName">
 
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/TextInputEditTextLastName"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content" />
             </com.google.android.material.textfield.TextInputLayout>
@@ -51,29 +51,29 @@
         </LinearLayout>
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/signUpTextInputEditTextEmail"
+            android:id="@+id/TextInputEmail"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
             android:hint="Email">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/TextInputEditTextEmail"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/signUpTextInputEditTextCpf"
+            android:id="@+id/TextInputCpf"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
             android:hint="CPF">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/TextInputEditTextCpf"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
         </com.google.android.material.textfield.TextInputLayout>
@@ -81,12 +81,11 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
             android:orientation="horizontal">
 
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/signUpTextInputEditTextPassword"
+                android:id="@+id/TextInputPassword"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -94,12 +93,13 @@
                 android:hint="Password">
 
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/TextInputEditTextPassword"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content" />
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/signUpEditTextTextConfirmPassword"
+                android:id="@+id/TextInputConfirmPassword"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -107,6 +107,7 @@
                 android:hint="Confirm Password">
 
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/TextInputEditTextConfirmPassword"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content" />
 
@@ -119,7 +120,9 @@
     <Button
         android:id="@+id/signUpbuttonSignUp"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="55dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="150dp"
         android:text="@string/button_signUp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
