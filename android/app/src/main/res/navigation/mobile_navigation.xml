@@ -13,7 +13,7 @@
 
     <fragment
         android:id="@+id/navigation_dashboard"
-        android:name="com.example.lojanet.ui.dashboard.DashboardFragment"
+        android:name="com.example.lojanet.ui.products.ProductsFragment"
         android:label="@string/title_products"
         tools:layout="@layout/fragment_products" />
 

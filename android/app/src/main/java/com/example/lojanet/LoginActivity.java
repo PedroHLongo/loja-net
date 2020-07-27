@@ -58,7 +58,7 @@ public class LoginActivity extends AppCompatActivity {
                 isFieldEmpty();
             }
         });
-        
+
         signUp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
