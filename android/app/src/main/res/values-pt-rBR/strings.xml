@@ -20,4 +20,11 @@
     <string name="title_home">Início</string>
     <string name="title_products">Produtos</string>
     <string name="title_wishlist">Lista de Desejos</string>
+    <string name="fill_in_the_login_field">Preencha o campo do usuario.</string>
+    <string name="fill_in_the_password_field">Preencha o campo da senha.</string>
+    <string name="fill_in_the_first_name_field">Preencha o campo nome.</string>
+    <string name="fill_in_the_last_name_field">Preencha o campo sobrenome.</string>
+    <string name="fill_in_the_email_field">Preencha o campo email.</string>
+    <string name="fill_in_the_cpf_field">Preencha o campo CPF.</string>
+    <string name="you_need_to_confirm_the_password">Você precisa confirmar a senha.</string>
 </resources>

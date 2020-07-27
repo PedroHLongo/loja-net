@@ -3,15 +3,10 @@ package com.example.lojanet;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
-import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.ArrayAdapter;
 import android.widget.Button;
-import android.widget.EditText;
-import android.widget.Spinner;
 import android.widget.Toast;
-
 import com.android.volley.AuthFailureError;
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
@@ -22,16 +17,10 @@ import com.android.volley.toolbox.Volley;
 import com.example.lojanet.Entities.User;
 import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.textfield.TextInputEditText;
-import com.google.android.material.textfield.TextInputLayout;
-
 import org.json.JSONException;
 import org.json.JSONObject;
 import org.json.JSONTokener;
-
 import java.io.UnsupportedEncodingException;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Scanner;
 
 public class LoginActivity extends AppCompatActivity {
 
@@ -68,18 +57,11 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     public void isFieldEmpty(){
-        if(loginMain.getText().toString().equals("") /*|| passwordMain.getText().toString().equals("")*/){
-           /* Snackbar loginSnackBar = Snackbar.make(findViewById(R.id.mainActivity),
-                    R.string.fill_in_the_empty_fields, Snackbar.LENGTH_SHORT);
-            loginSnackBar.show();*/
-           loginMain.setError("Enter Name");
-
+        if(loginMain.getText().toString().equals("")){
+           loginMain.setError(getString(R.string.fill_in_the_login_field));
         }if(passwordMain.getText().toString().equals("")){
-
-            passwordMain.setError("Enter Password");
-
+            passwordMain.setError(getString(R.string.fill_in_the_password_field));
         }
-
         if(!loginMain.getText().toString().equals("") && !passwordMain.getText().toString().equals("")){
             requestLoginData();
         }

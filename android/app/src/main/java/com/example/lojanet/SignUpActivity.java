@@ -7,9 +7,7 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.Toast;
-
 import com.android.volley.AuthFailureError;
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
@@ -20,11 +18,9 @@ import com.android.volley.toolbox.Volley;
 import com.example.lojanet.Entities.CpfValidator;
 import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.textfield.TextInputEditText;
-
 import org.json.JSONException;
 import org.json.JSONObject;
 import org.json.JSONTokener;
-
 import java.io.UnsupportedEncodingException;
 
 public class SignUpActivity extends AppCompatActivity {
@@ -37,7 +33,6 @@ public class SignUpActivity extends AppCompatActivity {
     TextInputEditText signUpETConfirmPassword;
     Button signUpButton;
     LoginActivity lA = new LoginActivity();
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -68,10 +63,13 @@ public class SignUpActivity extends AppCompatActivity {
         String password = signUpETPassword.getText().toString();
         String confirmPassword = signUpETConfirmPassword.getText().toString();
         CpfValidator cpfValidator = new CpfValidator();
-        if (firstName.equals("") || lastName.equals("") || email.equals("") || cpf.equals("") || password.equals("") || confirmPassword.equals("")) {
-            Snackbar emptyFieldsSnackBar = Snackbar.make(findViewById(R.id.signUpActivity),
-                    R.string.fill_in_the_empty_fields, Snackbar.LENGTH_SHORT);
-            emptyFieldsSnackBar.show();
+        if(firstName.equals("") && lastName.equals("") && email.equals("") && cpf.equals("") && password.equals("") && confirmPassword.equals("")){
+            signUpETFirstName.setError(getString(R.string.fill_in_the_first_name_field));
+            signUpETLastName.setError(getString(R.string.fill_in_the_last_name_field));
+            signUpETEmail.setError(getString(R.string.fill_in_the_email_field));
+            signUPETCPF.setError(getString(R.string.fill_in_the_cpf_field));
+            signUpETPassword.setError(getString(R.string.fill_in_the_password_field));
+            signUpETConfirmPassword.setError(getString(R.string.you_need_to_confirm_the_password));
         }else if(!cpfValidator.cpfValidator(cpf)){
             Snackbar invalidCPFSnackBar = Snackbar.make(findViewById(R.id.signUpActivity),
                     R.string.invalid_cpf, Snackbar.LENGTH_SHORT);
@@ -80,17 +78,12 @@ public class SignUpActivity extends AppCompatActivity {
         }
         else{
             if(password.length() < 5){
-                Snackbar passwordStrengh = Snackbar.make(findViewById(R.id.signUpActivity),
-                        R.string.password_5_lengh, Snackbar.LENGTH_SHORT);
-                passwordStrengh.show();
+                signUpETPassword.setError(getString(R.string.password_5_lengh));
             }else if(password.matches("[a-zA-Z0-9]+")){
-                Snackbar passwordStrengh = Snackbar.make(findViewById(R.id.signUpActivity),
-                        R.string.password_1_special_character, Snackbar.LENGTH_SHORT);
-                passwordStrengh.show();
+                signUpETPassword.setError(getString(R.string.password_1_special_character));
             }else if(!confirmPassword.equals(password)){
-                Snackbar passwordStrengh = Snackbar.make(findViewById(R.id.signUpActivity),
-                        R.string.passwords_dont_match, Snackbar.LENGTH_SHORT);
-                passwordStrengh.show();
+                signUpETPassword.setError(getString(R.string.passwords_dont_match));
+                signUpETConfirmPassword.setError(getString(R.string.passwords_dont_match));
             }else {
                 alreadyExistCpfOrEmail(firstName, lastName, email, cpf, password, confirmPassword);
             }
@@ -197,7 +190,7 @@ public class SignUpActivity extends AppCompatActivity {
         Snackbar mySnackbar = Snackbar.make(findViewById(R.id.signUpActivity),
                 R.string.registered_successfully, Snackbar.LENGTH_LONG);
         mySnackbar.show();
-        final Intent i = new Intent(this, SignUpActivity.class);
+        final Intent i = new Intent(this, MainActivity.class);
         final Handler handler = new Handler();
         handler.postDelayed(new Runnable() {
             @Override

@@ -9,7 +9,14 @@
     <string name="password">Password</string>
     <string name="confirm_password">Confirm Password</string>
     <string name="incorrect_user"> Incorrect username or password.</string>
+    <string name="fill_in_the_login_field">Fill in the login field.</string>
+    <string name="fill_in_the_password_field">Fill in the password field.</string>
     <string name="fill_in_the_empty_fields">Fill in the empty fields.</string>
+    <string name="fill_in_the_first_name_field">Fill in the first name field.</string>
+    <string name="fill_in_the_last_name_field">Fill in the last name field.</string>
+    <string name="fill_in_the_email_field">Fill in the email field.</string>
+    <string name="fill_in_the_cpf_field">Fill in the CPF field.</string>
+    <string name="you_need_to_confirm_the_password">You need to confirm the password.</string>
     <string name="invalid_cpf">Invalid CPF.</string>
     <string name="password_5_lengh">Password must have at least 5 characters.</string>
     <string name="password_1_special_character">Password must have at least 1 special character.</string>
