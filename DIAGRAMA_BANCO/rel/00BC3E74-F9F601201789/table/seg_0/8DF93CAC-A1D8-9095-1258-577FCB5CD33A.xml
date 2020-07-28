@@ -1,0 +1,117 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="8DF93CAC-A1D8-9095-1258-577FCB5CD33A" name="USUARIO">
+<createdBy>Gabriel Kuroda</createdBy>
+<createdTime>2020-07-28 10:59:22 UTC</createdTime>
+<ownerDesignName>DIAGRAMA_BANCO</ownerDesignName>
+<ordsAlias>table_1</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_USUARIO" id="E618D015-D4D4-2FB3-16C7-80133CD2BC23">
+<createdBy>Gabriel Kuroda</createdBy>
+<createdTime>2020-07-28 11:16:33 UTC</createdTime>
+<commentInRDBMS><![CDATA[Código de identificação do Usuário.]]></commentInRDBMS>
+<ownerDesignName>DIAGRAMA_BANCO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NOME_USUARIO" id="A5D7984C-32EB-02CA-91D5-CCA09FB895E1">
+<createdBy>Gabriel Kuroda</createdBy>
+<createdTime>2020-07-28 11:16:33 UTC</createdTime>
+<commentInRDBMS><![CDATA[Nome do Usuário cadastrado.]]></commentInRDBMS>
+<ownerDesignName>DIAGRAMA_BANCO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>200 BYTE</dataTypeSize>
+<ownDataTypeParameters>200 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EMAIL" id="18CDA78F-7E2D-665C-4B06-240C99EF3B21">
+<createdBy>Gabriel Kuroda</createdBy>
+<createdTime>2020-07-28 11:16:33 UTC</createdTime>
+<commentInRDBMS><![CDATA[E-Mail do Usuário cadastrado.]]></commentInRDBMS>
+<ownerDesignName>DIAGRAMA_BANCO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SENHA_USUARIO" id="4D596A8E-0F08-78ED-F46B-3B5E3B4B50FC">
+<createdBy>Gabriel Kuroda</createdBy>
+<createdTime>2020-07-28 11:16:33 UTC</createdTime>
+<commentInRDBMS><![CDATA[Senha da conta do Usuário.]]></commentInRDBMS>
+<ownerDesignName>DIAGRAMA_BANCO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DATA_NASCIMENTO" id="C1E10E0F-52C8-E244-7028-C115ED2AE334">
+<createdBy>Gabriel Kuroda</createdBy>
+<createdTime>2020-07-28 11:16:33 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data de Nascimento do Usuário.]]></commentInRDBMS>
+<ownerDesignName>DIAGRAMA_BANCO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Column_6" id="203612B2-C026-9F5E-FDD4-0AA89A7F2192">
+<createdBy>Gabriel Kuroda</createdBy>
+<createdTime>2020-07-28 11:16:33 UTC</createdTime>
+<ownerDesignName>DIAGRAMA_BANCO</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CPF_USUARIO" id="352A5940-B966-EB34-2C72-A21B4E648835">
+<createdBy>Gabriel Kuroda</createdBy>
+<createdTime>2020-07-28 11:16:33 UTC</createdTime>
+<commentInRDBMS><![CDATA[CPF do Usuário.]]></commentInRDBMS>
+<ownerDesignName>DIAGRAMA_BANCO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>14 BYTE</dataTypeSize>
+<ownDataTypeParameters>14 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TELEFONE_USUARIO" id="62ADAD86-7023-16CE-F3EE-794F47436305">
+<createdBy>Gabriel Kuroda</createdBy>
+<createdTime>2020-07-28 11:16:33 UTC</createdTime>
+<commentInRDBMS><![CDATA[Telefone do Usuário.]]></commentInRDBMS>
+<ownerDesignName>DIAGRAMA_BANCO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>15 BYTE</dataTypeSize>
+<ownDataTypeParameters>15 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C13CF823-5ECB-971C-67A0-482C32D7A0C8" name="USUARIO_PK">
+<createdBy>Gabriel Kuroda</createdBy>
+<createdTime>2020-07-28 11:16:33 UTC</createdTime>
+<ownerDesignName>DIAGRAMA_BANCO</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E618D015-D4D4-2FB3-16C7-80133CD2BC23"/>
+<colUsage columnID="352A5940-B966-EB34-2C72-A21B4E648835"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

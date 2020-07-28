@@ -1,0 +1,48 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="7B1D0D5C-E561-B553-E919-E6F0C86FD452" name="CATEGORIA">
+<createdBy>Gabriel Kuroda</createdBy>
+<createdTime>2020-07-28 11:23:58 UTC</createdTime>
+<ownerDesignName>DIAGRAMA_BANCO</ownerDesignName>
+<ordsAlias>table_3</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_CATEGORIA" id="177E00AB-E2E9-F861-D03C-E4DCA8CEAA40">
+<createdBy>Gabriel Kuroda</createdBy>
+<createdTime>2020-07-28 11:24:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[Código de identificação da Categoria do Produto.]]></commentInRDBMS>
+<ownerDesignName>DIAGRAMA_BANCO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NOME_CATEGORIA" id="346D561B-B2F6-9A9C-1B24-84DA404BEA15">
+<createdBy>Gabriel Kuroda</createdBy>
+<createdTime>2020-07-28 11:24:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[Nome da categoria.]]></commentInRDBMS>
+<ownerDesignName>DIAGRAMA_BANCO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="591FF892-6F12-A104-B2F9-68FC62AF5D2F" name="CATEGORIA_PK">
+<createdBy>Gabriel Kuroda</createdBy>
+<createdTime>2020-07-28 11:24:59 UTC</createdTime>
+<ownerDesignName>DIAGRAMA_BANCO</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="177E00AB-E2E9-F861-D03C-E4DCA8CEAA40"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

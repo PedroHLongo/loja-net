@@ -1,0 +1,135 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="11B55FDC-8A6E-6495-62A3-A9EC59277C20" name="ENDERECO">
+<createdBy>Gabriel Kuroda</createdBy>
+<createdTime>2020-07-28 11:16:59 UTC</createdTime>
+<ownerDesignName>DIAGRAMA_BANCO</ownerDesignName>
+<ordsAlias>table_2</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CODIGO_ENDERECO" id="9C3A31F7-15EE-72CB-BEC2-57BBEC00BB38">
+<createdBy>Gabriel Kuroda</createdBy>
+<createdTime>2020-07-28 11:22:45 UTC</createdTime>
+<commentInRDBMS><![CDATA[Código do Endereço.]]></commentInRDBMS>
+<ownerDesignName>DIAGRAMA_BANCO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="RUA" id="F43FCDD5-96E8-94C0-AF9D-B1A8801CC956">
+<createdBy>Gabriel Kuroda</createdBy>
+<createdTime>2020-07-28 11:22:45 UTC</createdTime>
+<commentInRDBMS><![CDATA[Rua cadastrada,referente ao endereço.]]></commentInRDBMS>
+<ownerDesignName>DIAGRAMA_BANCO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>150 BYTE</dataTypeSize>
+<ownDataTypeParameters>150 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NUMERO" id="3C06EAA4-F947-6C3B-321A-A2E8FA72B852">
+<createdBy>Gabriel Kuroda</createdBy>
+<createdTime>2020-07-28 11:22:45 UTC</createdTime>
+<commentInRDBMS><![CDATA[Número da casa, referente ao endereço.]]></commentInRDBMS>
+<ownerDesignName>DIAGRAMA_BANCO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="BAIRRO" id="4D30BA64-5FD9-5AF7-C062-40CD53A9F3A9">
+<createdBy>Gabriel Kuroda</createdBy>
+<createdTime>2020-07-28 11:22:45 UTC</createdTime>
+<commentInRDBMS><![CDATA[Bairro referente ao endereço.]]></commentInRDBMS>
+<ownerDesignName>DIAGRAMA_BANCO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CEP" id="0FA66B4D-3751-0250-7C9A-A62552A7FB57">
+<createdBy>Gabriel Kuroda</createdBy>
+<createdTime>2020-07-28 11:22:45 UTC</createdTime>
+<commentInRDBMS><![CDATA[Número do CEP referente ao endereço.]]></commentInRDBMS>
+<ownerDesignName>DIAGRAMA_BANCO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="REFERENCIA" id="2F068FA5-43D4-B8E1-E281-D1FD36F901B2">
+<createdBy>Gabriel Kuroda</createdBy>
+<createdTime>2020-07-28 11:22:45 UTC</createdTime>
+<commentInRDBMS><![CDATA[Referencia do endereço, para facilitar a localização.]]></commentInRDBMS>
+<ownerDesignName>DIAGRAMA_BANCO</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>200 BYTE</dataTypeSize>
+<ownDataTypeParameters>200 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="USUARIO_ID_USUARIO" id="37304293-BD45-73FF-4E05-8DF8BC94B528">
+<createdBy>Gabriel Kuroda</createdBy>
+<createdTime>2020-07-28 11:51:50 UTC</createdTime>
+<ownerDesignName>DIAGRAMA_BANCO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7742CE35-2C7D-9612-0B5C-407F07F591A4" referredColumn="E618D015-D4D4-2FB3-16C7-80133CD2BC23"/>
+</associations>
+</Column>
+<Column name="USUARIO_CPF_USUARIO" id="90CDD1CE-6C52-D5E4-E7C0-CDC96BF99849">
+<createdBy>Gabriel Kuroda</createdBy>
+<createdTime>2020-07-28 11:51:50 UTC</createdTime>
+<ownerDesignName>DIAGRAMA_BANCO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>14 BYTE</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7742CE35-2C7D-9612-0B5C-407F07F591A4" referredColumn="352A5940-B966-EB34-2C72-A21B4E648835"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="2DAFE278-97FC-6D3F-E9FB-F5188C44F040" name="ENDERECO_PK">
+<createdBy>Gabriel Kuroda</createdBy>
+<createdTime>2020-07-28 11:22:45 UTC</createdTime>
+<ownerDesignName>DIAGRAMA_BANCO</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9C3A31F7-15EE-72CB-BEC2-57BBEC00BB38"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="AAA3B3FC-6912-22AD-6C4B-220C07E77F23" name="FK_ENDERECO_USUARIO">
+<createdBy>Gabriel Kuroda</createdBy>
+<createdTime>2020-07-28 11:51:50 UTC</createdTime>
+<ownerDesignName>DIAGRAMA_BANCO</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="37304293-BD45-73FF-4E05-8DF8BC94B528"/>
+<colUsage columnID="90CDD1CE-6C52-D5E4-E7C0-CDC96BF99849"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

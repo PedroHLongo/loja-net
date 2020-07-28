@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="9BB611EE-EBC6-7729-FDE9-831C70128C85" containerWithKeyObject="33AB8357-D7E8-70D9-E18E-780C5720B7A1" localFKIndex="AB15BD72-CA9F-A8E9-6C0A-370B9BD62AB6" name="FK_COMPRA_USUARIO">
+<createdBy>Gabriel Kuroda</createdBy>
+<createdTime>2020-07-28 11:57:08 UTC</createdTime>
+<ownerDesignName>DIAGRAMA_BANCO</ownerDesignName>
+<referredTableLongName>USUARIO</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>8DF93CAC-A1D8-9095-1258-577FCB5CD33A</referredTableID>
+<keyObject>C13CF823-5ECB-971C-67A0-482C32D7A0C8</keyObject>
+<referredKeyID>C13CF823-5ECB-971C-67A0-482C32D7A0C8</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID_USUARIO,CPF_USUARIO</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

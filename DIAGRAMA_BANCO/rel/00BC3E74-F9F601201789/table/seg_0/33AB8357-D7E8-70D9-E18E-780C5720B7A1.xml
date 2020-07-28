@@ -1,0 +1,203 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="33AB8357-D7E8-70D9-E18E-780C5720B7A1" name="COMPRA">
+<createdBy>Gabriel Kuroda</createdBy>
+<createdTime>2020-07-28 11:45:52 UTC</createdTime>
+<ownerDesignName>DIAGRAMA_BANCO</ownerDesignName>
+<ordsAlias>table_8</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CODIGO_COMPRA" id="562E942F-69DE-181C-4654-BE69E7F1E045">
+<createdBy>Gabriel Kuroda</createdBy>
+<createdTime>2020-07-28 11:51:09 UTC</createdTime>
+<commentInRDBMS><![CDATA[Código da Compra.]]></commentInRDBMS>
+<ownerDesignName>DIAGRAMA_BANCO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DATA_COMPRA" id="35716BDC-4AAB-44D4-DE5F-4D7B2EC67E5A">
+<createdBy>Gabriel Kuroda</createdBy>
+<createdTime>2020-07-28 11:51:09 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data em que a Compra foi realizada.]]></commentInRDBMS>
+<ownerDesignName>DIAGRAMA_BANCO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DATA_CONFIRMACAO_COMPRA" id="1F9DD07F-C299-DE45-0A04-35A1C46AB14D">
+<createdBy>Gabriel Kuroda</createdBy>
+<createdTime>2020-07-28 11:51:09 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data em que o pagamenta da compra foi confirmada.]]></commentInRDBMS>
+<ownerDesignName>DIAGRAMA_BANCO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="QUANTIDADE" id="B58F3524-18BE-26C4-C84B-C1199C00C12D">
+<createdBy>Gabriel Kuroda</createdBy>
+<createdTime>2020-07-28 11:51:09 UTC</createdTime>
+<commentInRDBMS><![CDATA[Quantidade do produto comprado.]]></commentInRDBMS>
+<ownerDesignName>DIAGRAMA_BANCO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PRECO_TOTAL" id="597DF04C-BC29-21B0-BFDF-D30C53084740">
+<createdBy>Gabriel Kuroda</createdBy>
+<createdTime>2020-07-28 11:51:09 UTC</createdTime>
+<commentInRDBMS><![CDATA[Preço toatal da Comrpa.]]></commentInRDBMS>
+<ownerDesignName>DIAGRAMA_BANCO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CODIGO_RASTREIO" id="84222083-2F68-3E51-44F7-9BCFB7856781">
+<createdBy>Gabriel Kuroda</createdBy>
+<createdTime>2020-07-28 11:51:09 UTC</createdTime>
+<commentInRDBMS><![CDATA[Código disponibilizado para o ratreio da compra.]]></commentInRDBMS>
+<ownerDesignName>DIAGRAMA_BANCO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PRODUTO_CODIGO_PRODUTO" id="A5D5F136-8CCE-902E-6320-2773D712D2C1">
+<createdBy>Gabriel Kuroda</createdBy>
+<createdTime>2020-07-28 11:54:32 UTC</createdTime>
+<ownerDesignName>DIAGRAMA_BANCO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F4790F8F-E47B-0837-9290-19414CD6BA0B" referredColumn="31DC6B0F-8657-3E54-802E-939BBD0734DB"/>
+</associations>
+</Column>
+<Column name="ENTREGA_ID_ENTREGA" id="0E4C6B96-1C0B-A0DC-48A9-307BFB60BF55">
+<createdBy>Gabriel Kuroda</createdBy>
+<createdTime>2020-07-28 11:55:19 UTC</createdTime>
+<ownerDesignName>DIAGRAMA_BANCO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="1A154C97-46FD-6B13-B4B1-AC357C8390CC" referredColumn="8D0DE9AD-D679-A594-1167-45AFC572EE7D"/>
+</associations>
+</Column>
+<Column name="USUARIO_ID_USUARIO" id="0808377C-6285-EC1C-4C5E-D5021976A1A4">
+<createdBy>Gabriel Kuroda</createdBy>
+<createdTime>2020-07-28 11:57:08 UTC</createdTime>
+<ownerDesignName>DIAGRAMA_BANCO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9BB611EE-EBC6-7729-FDE9-831C70128C85" referredColumn="E618D015-D4D4-2FB3-16C7-80133CD2BC23"/>
+</associations>
+</Column>
+<Column name="USUARIO_CPF_USUARIO" id="7E8EC622-6FFE-EBFA-7305-38DC9F12C4A5">
+<createdBy>Gabriel Kuroda</createdBy>
+<createdTime>2020-07-28 11:57:08 UTC</createdTime>
+<ownerDesignName>DIAGRAMA_BANCO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>14 BYTE</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9BB611EE-EBC6-7729-FDE9-831C70128C85" referredColumn="352A5940-B966-EB34-2C72-A21B4E648835"/>
+</associations>
+</Column>
+<Column name="ENDERECO_CODIGO_ENDERECO" id="C3D85569-3D04-503A-4CC1-FDC8247D5497">
+<createdBy>Gabriel Kuroda</createdBy>
+<createdTime>2020-07-28 11:57:48 UTC</createdTime>
+<ownerDesignName>DIAGRAMA_BANCO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C0D3BD43-7C6E-01DC-BA50-00471A8176ED" referredColumn="9C3A31F7-15EE-72CB-BEC2-57BBEC00BB38"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="37DD388A-B9DD-2D14-E4DE-BEF9EAE5F9F1" name="COMPRA_PK">
+<createdBy>Gabriel Kuroda</createdBy>
+<createdTime>2020-07-28 11:51:09 UTC</createdTime>
+<ownerDesignName>DIAGRAMA_BANCO</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="562E942F-69DE-181C-4654-BE69E7F1E045"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C12ABBF4-BEF1-AA8D-CFFD-A4FDF745D1C6" name="FK_COMPRA_PRODUTO">
+<createdBy>Gabriel Kuroda</createdBy>
+<createdTime>2020-07-28 11:54:32 UTC</createdTime>
+<ownerDesignName>DIAGRAMA_BANCO</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A5D5F136-8CCE-902E-6320-2773D712D2C1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B1605DB7-21D4-AAF3-DBEC-D65B6042FD7A" name="FK_COMPRA_ENTREGA">
+<createdBy>Gabriel Kuroda</createdBy>
+<createdTime>2020-07-28 11:55:19 UTC</createdTime>
+<ownerDesignName>DIAGRAMA_BANCO</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0E4C6B96-1C0B-A0DC-48A9-307BFB60BF55"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="AB15BD72-CA9F-A8E9-6C0A-370B9BD62AB6" name="FK_COMPRA_USUARIO">
+<createdBy>Gabriel Kuroda</createdBy>
+<createdTime>2020-07-28 11:57:08 UTC</createdTime>
+<ownerDesignName>DIAGRAMA_BANCO</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0808377C-6285-EC1C-4C5E-D5021976A1A4"/>
+<colUsage columnID="7E8EC622-6FFE-EBFA-7305-38DC9F12C4A5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DC3267B5-EA63-C12A-C07A-40451712B697" name="FK_COMPRA_ENDERECO">
+<createdBy>Gabriel Kuroda</createdBy>
+<createdTime>2020-07-28 11:57:48 UTC</createdTime>
+<ownerDesignName>DIAGRAMA_BANCO</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C3D85569-3D04-503A-4CC1-FDC8247D5497"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

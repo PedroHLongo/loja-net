@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="5437319A-F22B-7290-E710-8771B8754241" containerWithKeyObject="4F5FCC7C-DB20-DFAE-3650-79785070B300" localFKIndex="01A3921D-BF5A-C895-FD3F-9BA82DA212A8" name="FK_AVALIACOES_PRODUTO">
+<createdBy>Gabriel Kuroda</createdBy>
+<createdTime>2020-07-28 11:53:43 UTC</createdTime>
+<ownerDesignName>DIAGRAMA_BANCO</ownerDesignName>
+<referredTableLongName>PRODUTO</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>C97370D7-691C-EDC5-79E7-DF746F181F1B</referredTableID>
+<keyObject>9732EE91-8C8A-CD25-842A-EC66C74A423B</keyObject>
+<referredKeyID>9732EE91-8C8A-CD25-842A-EC66C74A423B</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>CODIGO_PRODUTO</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

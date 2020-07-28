@@ -1,0 +1,137 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="4F5FCC7C-DB20-DFAE-3650-79785070B300" name="AVALIACOES">
+<createdBy>Gabriel Kuroda</createdBy>
+<createdTime>2020-07-28 11:32:52 UTC</createdTime>
+<ownerDesignName>DIAGRAMA_BANCO</ownerDesignName>
+<ordsAlias>table_6</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_AVALIACAO" id="60A2DC4B-A81D-E80F-0A29-CD26BBC1EFBF">
+<createdBy>Gabriel Kuroda</createdBy>
+<createdTime>2020-07-28 11:36:25 UTC</createdTime>
+<commentInRDBMS><![CDATA[ID da Avaliação.]]></commentInRDBMS>
+<ownerDesignName>DIAGRAMA_BANCO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TITULO_AVALIACAO" id="731E5A39-55F6-8252-C5ED-C2EB2FD26E58">
+<createdBy>Gabriel Kuroda</createdBy>
+<createdTime>2020-07-28 11:36:25 UTC</createdTime>
+<commentInRDBMS><![CDATA[Título da Avaliação.]]></commentInRDBMS>
+<ownerDesignName>DIAGRAMA_BANCO</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COMENTARIO" id="C3842F98-7D2D-96D6-2645-6903BCDDF23A">
+<createdBy>Gabriel Kuroda</createdBy>
+<createdTime>2020-07-28 11:36:25 UTC</createdTime>
+<commentInRDBMS><![CDATA[Comentario do Produto.]]></commentInRDBMS>
+<ownerDesignName>DIAGRAMA_BANCO</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>200 BYTE</dataTypeSize>
+<ownDataTypeParameters>200 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NOTA" id="01941AC1-A15E-9758-CFC2-C913A7AD3246">
+<createdBy>Gabriel Kuroda</createdBy>
+<createdTime>2020-07-28 11:36:25 UTC</createdTime>
+<commentInRDBMS><![CDATA[NOTA DE 0 a 5 .]]></commentInRDBMS>
+<ownerDesignName>DIAGRAMA_BANCO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="USUARIO_ID_USUARIO" id="C279AAE9-D505-F5E9-D2F4-9970B5E33C41">
+<createdBy>Gabriel Kuroda</createdBy>
+<createdTime>2020-07-28 11:53:20 UTC</createdTime>
+<ownerDesignName>DIAGRAMA_BANCO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D9B56C90-1752-77FB-4C08-8783B2238A71" referredColumn="E618D015-D4D4-2FB3-16C7-80133CD2BC23"/>
+</associations>
+</Column>
+<Column name="USUARIO_CPF_USUARIO" id="DC91D996-48EA-C24C-B70F-2BF2519E554B">
+<createdBy>Gabriel Kuroda</createdBy>
+<createdTime>2020-07-28 11:53:20 UTC</createdTime>
+<ownerDesignName>DIAGRAMA_BANCO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>14 BYTE</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D9B56C90-1752-77FB-4C08-8783B2238A71" referredColumn="352A5940-B966-EB34-2C72-A21B4E648835"/>
+</associations>
+</Column>
+<Column name="PRODUTO_CODIGO_PRODUTO" id="72B6FB46-F99A-ACCA-9E89-06D6026869DF">
+<createdBy>Gabriel Kuroda</createdBy>
+<createdTime>2020-07-28 11:53:43 UTC</createdTime>
+<ownerDesignName>DIAGRAMA_BANCO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="5437319A-F22B-7290-E710-8771B8754241" referredColumn="31DC6B0F-8657-3E54-802E-939BBD0734DB"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="14F77145-7B31-4240-5D19-7070AD883696" name="AVALIACOES_PK">
+<createdBy>Gabriel Kuroda</createdBy>
+<createdTime>2020-07-28 11:36:25 UTC</createdTime>
+<ownerDesignName>DIAGRAMA_BANCO</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="60A2DC4B-A81D-E80F-0A29-CD26BBC1EFBF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3A38237C-784F-EF28-5A44-A52C39680AE2" name="FK_AVALIACOES_USUARIO">
+<createdBy>Gabriel Kuroda</createdBy>
+<createdTime>2020-07-28 11:53:20 UTC</createdTime>
+<ownerDesignName>DIAGRAMA_BANCO</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C279AAE9-D505-F5E9-D2F4-9970B5E33C41"/>
+<colUsage columnID="DC91D996-48EA-C24C-B70F-2BF2519E554B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="01A3921D-BF5A-C895-FD3F-9BA82DA212A8" name="FK_AVALIACOES_PRODUTO">
+<createdBy>Gabriel Kuroda</createdBy>
+<createdTime>2020-07-28 11:53:43 UTC</createdTime>
+<ownerDesignName>DIAGRAMA_BANCO</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="72B6FB46-F99A-ACCA-9E89-06D6026869DF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,71 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="63EC0274-9FB1-D729-BA88-E57ADCB66565" name="ENTREGA">
+<createdBy>Gabriel Kuroda</createdBy>
+<createdTime>2020-07-28 11:36:43 UTC</createdTime>
+<ownerDesignName>DIAGRAMA_BANCO</ownerDesignName>
+<ordsAlias>table_7</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_ENTREGA" id="8D0DE9AD-D679-A594-1167-45AFC572EE7D">
+<createdBy>Gabriel Kuroda</createdBy>
+<createdTime>2020-07-28 11:41:37 UTC</createdTime>
+<commentInRDBMS><![CDATA[ID do tipo de entrega.]]></commentInRDBMS>
+<ownerDesignName>DIAGRAMA_BANCO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NOME_ENTREGA" id="27C45265-C65E-916B-B65D-E7247C01E85F">
+<createdBy>Gabriel Kuroda</createdBy>
+<createdTime>2020-07-28 11:41:37 UTC</createdTime>
+<commentInRDBMS><![CDATA[Nome do tipo de entrega.]]></commentInRDBMS>
+<ownerDesignName>DIAGRAMA_BANCO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TIPO_ENTREGA" id="A46CEC5B-CC7B-38A3-8C30-544F2F3D40C6">
+<createdBy>Gabriel Kuroda</createdBy>
+<createdTime>2020-07-28 11:41:37 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tipo da Entrega.]]></commentInRDBMS>
+<ownerDesignName>DIAGRAMA_BANCO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PRECO_ENTREGA" id="CEEBE21F-BD77-C981-D236-EA78972D2F76">
+<createdBy>Gabriel Kuroda</createdBy>
+<createdTime>2020-07-28 11:41:37 UTC</createdTime>
+<commentInRDBMS><![CDATA[Preço da Entrega.]]></commentInRDBMS>
+<ownerDesignName>DIAGRAMA_BANCO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="2AD27D45-D45C-8BBF-8BCE-F87928513FB9" name="ENTREGA_PK">
+<createdBy>Gabriel Kuroda</createdBy>
+<createdTime>2020-07-28 11:41:37 UTC</createdTime>
+<ownerDesignName>DIAGRAMA_BANCO</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8D0DE9AD-D679-A594-1167-45AFC572EE7D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

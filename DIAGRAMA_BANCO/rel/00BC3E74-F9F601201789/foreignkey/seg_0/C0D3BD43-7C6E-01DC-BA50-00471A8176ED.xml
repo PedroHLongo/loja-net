@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="C0D3BD43-7C6E-01DC-BA50-00471A8176ED" containerWithKeyObject="33AB8357-D7E8-70D9-E18E-780C5720B7A1" localFKIndex="DC3267B5-EA63-C12A-C07A-40451712B697" name="FK_COMPRA_ENDERECO">
+<createdBy>Gabriel Kuroda</createdBy>
+<createdTime>2020-07-28 11:57:48 UTC</createdTime>
+<ownerDesignName>DIAGRAMA_BANCO</ownerDesignName>
+<referredTableLongName>ENDERECO</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>11B55FDC-8A6E-6495-62A3-A9EC59277C20</referredTableID>
+<keyObject>2DAFE278-97FC-6D3F-E9FB-F5188C44F040</keyObject>
+<referredKeyID>2DAFE278-97FC-6D3F-E9FB-F5188C44F040</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>CODIGO_ENDERECO</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

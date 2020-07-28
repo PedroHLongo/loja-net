@@ -1,0 +1,118 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C97370D7-691C-EDC5-79E7-DF746F181F1B" name="PRODUTO">
+<createdBy>Gabriel Kuroda</createdBy>
+<createdTime>2020-07-28 11:25:23 UTC</createdTime>
+<ownerDesignName>DIAGRAMA_BANCO</ownerDesignName>
+<ordsAlias>table_5</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CODIGO_PRODUTO" id="31DC6B0F-8657-3E54-802E-939BBD0734DB">
+<createdBy>Gabriel Kuroda</createdBy>
+<createdTime>2020-07-28 11:30:58 UTC</createdTime>
+<commentInRDBMS><![CDATA[Código do produto.]]></commentInRDBMS>
+<ownerDesignName>DIAGRAMA_BANCO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NOME_PRODUTO" id="D2D3B328-6802-F7C8-2680-1F295102F067">
+<createdBy>Gabriel Kuroda</createdBy>
+<createdTime>2020-07-28 11:30:58 UTC</createdTime>
+<commentInRDBMS><![CDATA[Nome do Produto.]]></commentInRDBMS>
+<ownerDesignName>DIAGRAMA_BANCO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="IMAGEM_PRODUTO" id="C9C9467F-18DD-1488-C954-7FE0A03EA36A">
+<createdBy>Gabriel Kuroda</createdBy>
+<createdTime>2020-07-28 11:30:58 UTC</createdTime>
+<commentInRDBMS><![CDATA[Imagem do Produto.]]></commentInRDBMS>
+<ownerDesignName>DIAGRAMA_BANCO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT010</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PRECO_PRODUTO" id="CC7AA569-BC91-C060-FFC0-07E94A79128A">
+<createdBy>Gabriel Kuroda</createdBy>
+<createdTime>2020-07-28 11:30:58 UTC</createdTime>
+<commentInRDBMS><![CDATA[Preço do Produto.]]></commentInRDBMS>
+<ownerDesignName>DIAGRAMA_BANCO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DESCRICAO_PRODUTO" id="21F2BC31-1E29-87B0-8D3F-274CCBA490A4">
+<createdBy>Gabriel Kuroda</createdBy>
+<createdTime>2020-07-28 11:30:58 UTC</createdTime>
+<commentInRDBMS><![CDATA[Descrição do Produto.]]></commentInRDBMS>
+<ownerDesignName>DIAGRAMA_BANCO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>250 BYTE</dataTypeSize>
+<ownDataTypeParameters>250 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="INFO_TEC_PRODUTO" id="C0171D84-FF5C-2CBA-E681-F2FD9D5FBB77">
+<createdBy>Gabriel Kuroda</createdBy>
+<createdTime>2020-07-28 11:30:58 UTC</createdTime>
+<commentInRDBMS><![CDATA[Informações Técnicas do Produto.]]></commentInRDBMS>
+<ownerDesignName>DIAGRAMA_BANCO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>150 BYTE</dataTypeSize>
+<ownDataTypeParameters>150 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CATEGORIA_ID_CATEGORIA" id="52FC95D0-965A-26A1-510C-806C802F0A89">
+<createdBy>Gabriel Kuroda</createdBy>
+<createdTime>2020-07-28 11:52:38 UTC</createdTime>
+<ownerDesignName>DIAGRAMA_BANCO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="62A7F0AD-AD12-4D0B-8822-70742179BD05" referredColumn="177E00AB-E2E9-F861-D03C-E4DCA8CEAA40"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="9732EE91-8C8A-CD25-842A-EC66C74A423B" name="PRODUTO_PK">
+<createdBy>Gabriel Kuroda</createdBy>
+<createdTime>2020-07-28 11:30:58 UTC</createdTime>
+<ownerDesignName>DIAGRAMA_BANCO</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="31DC6B0F-8657-3E54-802E-939BBD0734DB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="263CA1FB-05BB-EB64-C826-42FC9EB5B227" name="FK_PRODUTO_CATEGORIA">
+<createdBy>Gabriel Kuroda</createdBy>
+<createdTime>2020-07-28 11:52:38 UTC</createdTime>
+<ownerDesignName>DIAGRAMA_BANCO</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="52FC95D0-965A-26A1-510C-806C802F0A89"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

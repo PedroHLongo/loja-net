@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="DIAGRAMA_BANCO" id="FAAF2805-2816-6A59-414A-240AFA6DFFF3" version="3.5">
+<createdBy>Gabriel Kuroda</createdBy>
+<createdTime>2020-07-28 10:41:04 UTC</createdTime>
+<ownerDesignName>DIAGRAMA_BANCO</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>FAAF2805-2816-6A59-414A-240AFA6DFFF3</designId>
+</OSDM_Design>
