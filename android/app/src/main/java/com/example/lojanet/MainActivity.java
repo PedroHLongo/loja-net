@@ -1,14 +1,20 @@
 package com.example.lojanet;
 
-import android.os.Bundle;
-
-import com.google.android.material.bottomnavigation.BottomNavigationView;
-
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.navigation.NavController;
-import androidx.navigation.Navigation;
-import androidx.navigation.ui.AppBarConfiguration;
-import androidx.navigation.ui.NavigationUI;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
+
+import android.os.Bundle;
+import android.view.MenuItem;
+
+import com.example.lojanet.ui.account.AccountFragment;
+import com.example.lojanet.ui.home.HomeFragment;
+import com.example.lojanet.ui.products.ProductsFragment;
+import com.example.lojanet.ui.wishlist.WishlistFragment;
+import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.ittianyu.bottomnavigationviewex.BottomNavigationViewEx;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -16,15 +22,62 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        BottomNavigationView navView = findViewById(R.id.nav_view);
-        // Passing each menu ID as a set of Ids because each
-        // menu should be considered as top level destinations.
-        AppBarConfiguration appBarConfiguration = new AppBarConfiguration.Builder(
-                R.id.navigation_home, R.id.navigation_dashboard, R.id.navigation_notifications)
-                .build();
-        NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
-        NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
-        NavigationUI.setupWithNavController(navView, navController);
+
+        settingsBottomNavigation();
+
+        FragmentManager fragmentManager = getSupportFragmentManager();
+        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+
+        fragmentTransaction.replace(R.id.viewPager,new HomeFragment()).commit();
+
+    }
+
+    private void settingsBottomNavigation(){
+
+        BottomNavigationViewEx bottomNavigationViewEx = findViewById(R.id.bottomnavigation);
+
+        bottomNavigationViewEx.enableAnimation(true);
+        bottomNavigationViewEx.enableItemShiftingMode(true);
+        bottomNavigationViewEx.enableShiftingMode(false);
+        bottomNavigationViewEx.setTextVisibility(true);
+
+        navigation(bottomNavigationViewEx);
+
+    }
+
+    private  void navigation(BottomNavigationViewEx viewEx){
+
+        viewEx.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
+
+                FragmentManager fragmentManager = getSupportFragmentManager();
+                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+
+                switch (menuItem.getItemId()){
+
+                    case R.id.navigation_home:
+                        fragmentTransaction.replace(R.id.viewPager,new HomeFragment()).commit();
+                        return true;
+
+                    case R.id.navigation_products:
+                        fragmentTransaction.replace(R.id.viewPager,new ProductsFragment()).commit();
+                        return true;
+
+                    case R.id.navigation_wishlist:
+                        fragmentTransaction.replace(R.id.viewPager,new WishlistFragment()).commit();
+                        return true;
+
+                    case R.id.navigation_account:
+                        fragmentTransaction.replace(R.id.viewPager,new AccountFragment()).commit();
+                        return true;
+
+                }
+
+                return false;
+            }
+        });
+
     }
 
 }

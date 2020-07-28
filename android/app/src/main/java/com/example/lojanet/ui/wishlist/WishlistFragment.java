@@ -1,4 +1,4 @@
-package com.example.lojanet.ui.notifications;
+package com.example.lojanet.ui.wishlist;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -10,7 +10,7 @@ import androidx.fragment.app.Fragment;
 
 import com.example.lojanet.R;
 
-public class NotificationsFragment extends Fragment {
+public class WishlistFragment extends Fragment {
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {

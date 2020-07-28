@@ -27,4 +27,8 @@
     <string name="fill_in_the_email_field">Preencha o campo email.</string>
     <string name="fill_in_the_cpf_field">Preencha o campo CPF.</string>
     <string name="you_need_to_confirm_the_password">Você precisa confirmar a senha.</string>
+    <string name="title_home_navigation">Início</string>
+    <string name="title_products_navigation">Produtos</string>
+    <string name="title_wishlist_navigation">Favoritos</string>
+    <string name="title_account_navigation">Conta</string>
 </resources>

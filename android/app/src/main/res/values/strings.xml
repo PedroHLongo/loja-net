@@ -26,5 +26,9 @@
     <string name="title_home">Home</string>
     <string name="title_products">Products</string>
     <string name="title_wishlist">WishList</string>
+    <string name="title_home_navigation">Home</string>
+    <string name="title_products_navigation">Products</string>
+    <string name="title_wishlist_navigation">Wishlist</string>
+    <string name="title_account_navigation">Account</string>
 
 </resources>

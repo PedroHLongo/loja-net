@@ -32,7 +32,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="50dp"
             android:layout_marginRight="50dp"
-            android:hint="Login"
+            android:hint="@string/hint_login"
             app:errorEnabled="true">
 
             <com.google.android.material.textfield.TextInputEditText
@@ -48,7 +48,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="50dp"
             android:layout_marginRight="50dp"
-            android:hint="Password"
+            android:hint="@string/hint_password"
             app:errorEnabled="true">
 
             <com.google.android.material.textfield.TextInputEditText
