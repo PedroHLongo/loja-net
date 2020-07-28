@@ -72,24 +72,17 @@
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_volley_volley_1_1_1_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_volley_volley_1_1_1_aar.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_material_material_1_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_material_material_1_0_0_aar.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/lojanet/LoginActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/lojanet/LoginActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/lojanet/SecondActivity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/lojanet/SignUpActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/lojanet/SignUpActivity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_second.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values-pt-rBR/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values-pt-rBR/strings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_sign_up.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_sign_up.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/local.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../servidor/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../servidor/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../servidor/src/main/java/com/unifaj/semestre/Loja/net/Sql/Sql" beforeDir="false" afterPath="$PROJECT_DIR$/../servidor/src/main/java/com/unifaj/semestre/Loja/net/Sql/Sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="Nexus_6P_API_29" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="Nexus_6_API_29" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -337,6 +330,10 @@
     <state width="1238" height="263" key="GridCell.Tab.1.right/0.0.1280.800@0.0.1280.800" timestamp="1595520815551" />
     <state width="598" height="245" key="GridCell.Tab.1.right/0.23.1280.777@0.23.1280.777" timestamp="1595596039017" />
     <state width="1877" height="347" key="GridCell.Tab.1.right/1920.12.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1595451479544" />
+    <state x="725" y="231" key="RollbackChangesDialog" timestamp="1595877215144">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="725" y="231" key="RollbackChangesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1595877215144" />
     <state x="461" y="162" key="SettingsEditor" timestamp="1595446734931">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -349,11 +346,11 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="92" y="92" width="1736" height="856" key="com.android.tools.idea.avdmanager.AvdListDialog/1920.12.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1595446744518" />
-    <state x="467" y="241" key="com.intellij.ide.util.TipDialog" timestamp="1595848280835">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="656" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1595876147494">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="467" y="241" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1595848280835" />
-    <state x="656" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1595634883041" />
+    <state x="656" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1595876147494" />
     <state x="656" y="344" key="com.intellij.ide.util.TipDialog/1920.12.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1595455606891" />
     <state x="616" y="240" width="672" height="677" key="run.anything.popup" timestamp="1595446728056">
       <screen x="0" y="0" width="1920" height="1040" />
